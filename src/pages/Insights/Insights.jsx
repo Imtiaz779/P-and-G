@@ -1,8 +1,13 @@
 import React from 'react'
+import OurInsights from '../../components/Insights/OurInsights'
+import InsightsBody from '../../components/Insights/InsightsBody'
 
 const Insights = () => {
   return (
-    <div>Insights</div>
+   <>
+   <OurInsights/>
+   <InsightsBody/>
+   </>
   )
 }
 
