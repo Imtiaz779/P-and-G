@@ -1,5 +1,5 @@
 import React from 'react'
-import img from "../assets/join.png"
+import img from "../../assets/join.png"
 const JoiningPG = () => {
    return (
          <div className="bg-[#25184f] text-white flex justify-center p-4">

@@ -1,5 +1,5 @@
 import React from 'react'
-import img from "../assets/abouthero.png"
+import img from "../../assets/abouthero.png"
 const AboutPandG = () => {
  
      return (
@@ -9,7 +9,7 @@ const AboutPandG = () => {
             {/* Text Section */}
             <div className="flex flex-col justify-between w-full h-auto px-[10px]">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold leading-tight">A About P & G</h1>
+                <h1 className="text-4xl lg:text-5xl font-bold leading-tight"> About P & G</h1>
                 <p className=" mt-6 overflow-hidden text-ellipsis">
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                 </p>

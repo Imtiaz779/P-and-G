@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from "../assets/card01.png";
-import img2 from "../assets/card02.png";
-import img3 from "../assets/card03.png";
+import img1 from "../../assets/card01.png";
+import img2 from "../../assets/card02.png";
+import img3 from "../../assets/card03.png";
 
 const OurPlanetCard = () => {
   const cards = [
