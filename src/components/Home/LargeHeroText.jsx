@@ -7,7 +7,7 @@ const LargeHeroText = () => {
       <div className="flex flex-col-reverse md:flex-row justify-between items-center max-w-7xl w-full gap-10">
         
         {/* Text Section */}
-        <div className="w-full md:w-1/2 px-3">
+        <div className="w-full md:w-1/2 px-3" data-aos="fade-right">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             A large hero text here
           </h1>
@@ -23,7 +23,7 @@ const LargeHeroText = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full h-auto md:w-1/2 px-5">
+        <div className="w-full h-auto md:w-1/2 px-5" data-aos="zoom-in">
           <img
             src={img}
             alt="Hero"
