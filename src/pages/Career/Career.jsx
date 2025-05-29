@@ -3,7 +3,7 @@ import img from "../../assets/Frame.png";
 
 const Career = () => {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center bg-white text-black p-8 " data-aos="flip-left">
+    <div className="w-full min-h-screen flex items-center justify-center bg-white text-black p-8 " data-aos="flip-left"  data-aos-duration="2000">
       <div className="flex flex-col justify-center items-center gap-6 max-w-2xl text-center">
         <div className="flex flex-col justify-center items-center gap-2 px-2">
           <h1 className="text-4xl sm:text-5xl font-bold">Sorry!</h1>
