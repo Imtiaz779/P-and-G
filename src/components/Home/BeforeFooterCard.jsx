@@ -19,7 +19,7 @@ const BeforeFooterCard = () => {
 
   return (
     <section className="flex justify-center items-center bg-white py-16 px-8 text-black">
-      <div className="w-full max-w-[1296px] flex flex-row gap-12">
+      <div className="w-full max-w-7xl flex flex-row gap-12">
         {perspectives.map((perspective) => (
           <div
             key={perspective.id}

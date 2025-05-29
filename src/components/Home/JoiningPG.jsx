@@ -3,7 +3,7 @@ import img from "../../assets/join.png"
 const JoiningPG = () => {
    return (
          <div className="bg-[#25184f] text-white flex justify-center p-4">
-           <div className="flex  justify-between items-center max-w-[1296px] w-full mt-[40px]  gap-10">
+           <div className="flex  justify-between items-center max-w-7xl w-full mt-[40px]  gap-10">
              
              {/* Text Section */}
              <div className="flex flex-col justify-between w-full h-auto px-[10px]">

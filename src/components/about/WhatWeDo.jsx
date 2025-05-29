@@ -26,7 +26,7 @@ const contentList = [
 
 const WhatWeDo = () => {
   return (
-    <div className="bg-white text-black flex flex-col gap-16 py-10 px-4">
+    <div className="bg-white max-w-7xl mx-auto text-black flex flex-col gap-16 py-10 px-4">
 
         <h1 className="font-bold text-[32px]">What We Do</h1>
 

@@ -2,8 +2,12 @@ import React from "react";
 import logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
 const Header = () => {
+ window.addEventListener('popstate',()=>{
+  console.log(window.location.pathname)
+ })
   return (
-    <div class="w-full h-[100px] mx-auto bg-[#FFFFFF]">
+    
+    <div className="w-full max-w-7xl h-[100px] mx-auto bg-[#FFFFFF]">
       <div className="flex justify-between items-center h-full px-12 lg:px-32">
         <div className="">
           <Link to="/">

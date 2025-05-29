@@ -3,7 +3,7 @@ import React from 'react'
 const WhoWeServe = () => {
   return (
    <section className="flex justify-center items-center bg-[#F8F9FA] py-16 px-4 text-black">
-  <div className="w-full max-w-[1296px] flex flex-col gap-10">
+  <div className="w-full max-w-7xl flex flex-col gap-10">
     
     {/* Heading */}
     <div className="px-4">

@@ -3,7 +3,7 @@ import img from "../../assets/insightshero.png"
 const OurInsights = () => {
    return (
       <div className="bg-white text-black flex justify-center p-4">
-        <div className="flex  justify-between items-center max-w-[1296px] w-full mt-[40px]  gap-10">
+        <div className="flex  justify-between items-center max-w-7xl w-full mt-[40px]  gap-10">
           
           {/* Text Section */}
           <div className="flex  justify-between w-full h-auto px-[10px]">

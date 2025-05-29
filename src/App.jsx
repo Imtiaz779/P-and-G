@@ -10,7 +10,7 @@ import Career from "./pages/Career/Career";
 
 const App = () => {
   return (
-    <>
+    <div className="bg-white">
       <Header />
 <Routes>
         <Route path='/' element={<Home />} />
@@ -21,7 +21,7 @@ const App = () => {
         
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 };
 
