@@ -31,11 +31,11 @@ const WhatWeAre = () => {
 
   return (
     <section className="flex justify-center items-center bg-[#25184F] py-16 px-4 text-black">
-      <div className="w-full max-w-7xl flex flex-col gap-10">
+      <div className="w-full max-w-7xl flex flex-col gap-10" data-aos="fade-left">
         
         {/* Heading */}
         <div className="px-2">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white md:text-center text-left">What We Are</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white md:text-center text-left" data-aos="fade" >What We Are</h2>
         </div>
 
         {/* Cards */}

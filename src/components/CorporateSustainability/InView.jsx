@@ -27,7 +27,7 @@ const InView = () => {
           key={index}
           className={`flex flex-col md:flex-row ${
             index % 2 === 0 ? "md:flex-row-reverse" : ""
-          } justify-between items-center w-full mx-auto gap-8`}
+          } justify-between items-center w-full mx-auto gap-8`} data-aos="zoom-in"
         >
           {/* Text Section */}
           <div className="w-full md:w-1/2 px-4 flex flex-col">

@@ -35,7 +35,7 @@ const Header = () => {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center px-4 gap-4 pb-6 text-gray-700 font-medium bg-white w-full absolute">
+        <div className="md:hidden flex flex-col items-center px-4 gap-4 pb-6 text-gray-700 font-medium bg-white w-full absolute z-10">
           <Link to="/" onClick={toggleMenu}>Home</Link>
           <Link to="/about" onClick={toggleMenu}>About</Link>
           <Link to="/insights" onClick={toggleMenu}>Insights</Link>

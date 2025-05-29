@@ -36,7 +36,7 @@ const OurPlanetCard = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="w-full md:w-[320px] bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col justify-between"
+              className="w-full md:w-[320px] bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col justify-between" data-aos="zoom-in"
             >
               <img
                 src={card.img}

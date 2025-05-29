@@ -7,7 +7,7 @@ const WhoWeServe = () => {
         
         {/* Heading */}
         <div className="px-4">
-          <h2 className="text-2xl sm:text-3xl font-bold text-left md:text-center text-[#25184F]">
+          <h2 className="text-2xl sm:text-3xl font-bold text-left md:text-center text-[#25184F]" data-aos="fade">
             Who We Serve
           </h2>
         </div>
@@ -54,7 +54,7 @@ const WhoWeServe = () => {
           ].map((item) => (
             <div
               key={item.id}
-              className="bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col items-start gap-4"
+              className="bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col items-start gap-4" data-aos="fade-right"
             >
               <h3 className="text-xl font-semibold text-[#25184F]">{item.title}</h3>
               <p className="text-sm text-left text-gray-700">{item.description}</p>

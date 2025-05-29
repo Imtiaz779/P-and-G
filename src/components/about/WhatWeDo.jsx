@@ -27,14 +27,14 @@ const contentList = [
 const WhatWeDo = () => {
   return (
     <div className="bg-white max-w-7xl mx-auto text-black flex flex-col gap-16 py-10 px-4">
-      <h1 className="font-bold text-3xl">What We Do</h1>
+      <h1 className="font-bold text-3xl" data-aos="fade">What We Do</h1>
 
       {contentList.map((item, index) => (
         <div
           key={index}
           className={`flex flex-col ${
             index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-          } justify-between items-center gap-8`}
+          } justify-between items-center gap-8`} data-aos="zoom-in-up"
         >
           {/* Text Section */}
           <div className="w-full md:w-1/2 px-2">

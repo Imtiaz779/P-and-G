@@ -7,8 +7,8 @@ const AboutPandG = () => {
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 max-w-7xl w-full">
         
         {/* Text Section */}
-        <div className="w-full md:w-1/2 px-2">
-          <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+        <div className="w-full md:w-1/2 px-2" data-aos="fade-right">
+          <h1 className="text-3xl md:text-4xl font-bold leading-tight whitespace-nowrap">
             About P & G
           </h1>
           <p className="mt-6 text-sm md:text-base text-white/90">
@@ -21,7 +21,7 @@ const AboutPandG = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full md:w-1/2 px-2">
+        <div className="w-full md:w-1/2 px-2" data-aos="fade-left">
           <img
             src={img}
             alt="About P & G"

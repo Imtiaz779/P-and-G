@@ -42,7 +42,7 @@ const KeyArea = () => {
 
         {/* Cards */}
      {/* Cards */}
-<div className="flex flex-col gap-6 sm:flex sm:flex-col md:grid md:grid-cols-4 md:gap-6 px-2">
+<div className="flex flex-col gap-6 sm:flex sm:flex-col md:grid md:grid-cols-4 md:gap-6 px-2" data-aos="zoom-in" data-aos-duration="1500">
   {perspectives.map((perspective) => (
     <div
       key={perspective.id}

@@ -7,7 +7,7 @@ const CorporateHero = () => {
       <div className="flex flex-col-reverse  md:flex-row justify-between items-center max-w-7xl w-full mt-10 gap-10">
         
         {/* Text Section */}
-        <div className="flex flex-coljustify-between w-full md:w-1/2 h-auto px-3">
+        <div className="flex flex-coljustify-between w-full md:w-1/2 h-auto px-3" data-aos="fade-right">
           <div>
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
               Corporate Sustainability
@@ -19,7 +19,7 @@ const CorporateHero = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full md:w-1/2 px-8">
+        <div className="w-full md:w-1/2 px-8" data-aos="fade-left">
           <img
             src={img}
             alt="Hero"

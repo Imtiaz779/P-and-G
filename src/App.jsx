@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home/Home";
@@ -14,11 +14,12 @@ const App = () => {
   
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1200,
       once: false,
       mirror: true, // ✅ Animate on scroll up too
       offset: 100,
       easing: "ease-in-out",
+       delay: 100, 
     });
      AOS.refresh();
   }, []);

@@ -36,12 +36,12 @@ const OurPlanetCorporate = () => {
     <div className="bg-white max-w-7xl mx-auto text-black flex flex-col gap-8 py-8 px-4">
       <h1 className="font-bold text-3xl">Investing in Our Planet</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8" >
         {contentList.map((item, index) => (
-          <div key={index} className="">
+          <div key={index} className=""data-aos="zoom-in">
             {/* Image Section */}
             <div className="w-full px-8">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-[24px] shadow-md ">
+              <div className="w-full aspect-[4/3] overflow-hidden rounded-[24px] shadow-md " >
                 <img
                   src={item.img}
                   alt={item.title}

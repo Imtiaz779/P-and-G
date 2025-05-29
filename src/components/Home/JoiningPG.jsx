@@ -7,8 +7,8 @@ const JoiningPG = () => {
       <div className="flex flex-col-reverse md:flex-row justify-between items-center max-w-7xl w-full mt-10 gap-10">
         
         {/* Text Section */}
-        <div className="w-full md:w-1/2 h-auto px-3">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <div className="w-full md:w-1/2 h-auto px-3" data-aos="fade-right" >
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight whitespace-nowrap">
             Interested in Joining P & G
           </h1>
           <p className="mt-6 text-sm md:text-base text-ellipsis overflow-hidden">
@@ -20,7 +20,7 @@ const JoiningPG = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2" data-aos="fade-left">
           <img
             src={img}
             alt="Join P&G"
