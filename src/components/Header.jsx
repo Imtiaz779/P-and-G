@@ -9,7 +9,7 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <header className="w-full bg-white shadow-md">
+    <header className="w-full bg-white  relative">
       <div className="max-w-7xl mx-auto h-24 flex items-center justify-between px-4 md:px-8 lg:px-32">
         {/* Logo */}
         <Link to="/">
@@ -35,7 +35,7 @@ const Header = () => {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-start px-4 gap-4 pb-6 text-gray-700 font-medium bg-white shadow-md">
+        <div className="md:hidden flex flex-col items-center px-4 gap-4 pb-6 text-gray-700 font-medium bg-white w-full absolute">
           <Link to="/" onClick={toggleMenu}>Home</Link>
           <Link to="/about" onClick={toggleMenu}>About</Link>
           <Link to="/insights" onClick={toggleMenu}>Insights</Link>
