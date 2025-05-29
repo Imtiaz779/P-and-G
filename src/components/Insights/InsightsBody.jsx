@@ -27,27 +27,27 @@ const contentList = [
 const InsightsBody = () => {
   return (
     <div className="bg-white max-w-7xl mx-auto text-black flex flex-col gap-16 py-10 px-4">
-      <h1 className="font-bold text-[32px]">Our Perspectives in Key Areas</h1>
+      <h1 className="font-bold text-3xl">Our Perspectives in Key Areas</h1>
 
       {contentList.map((item, index) => (
         <div
           key={index}
-          className={`flex ${
-            index % 2 === 0 ? 'flex-row-reverse' : ''
-          } justify-between items-center max-w-[1296px] w-full mx-auto gap-8`}
+          className={`flex flex-col md:flex-row ${
+            index % 2 === 0 ? 'md:flex-row-reverse' : ''
+          } justify-between items-center gap-8`}
         >
           {/* Text Section */}
-          <div className="w-1/2 px-4">
-            <h2 className="font-outfit font-medium text-[28px] leading-[32px] tracking-normal">
+          <div className="w-full md:w-1/2 px-4">
+            <h2 className="font-outfit font-medium text-2xl md:text-3xl">
               {item.title}
             </h2>
-            <p className="font-zilla text-[20px] font-normal leading-[22px] tracking-[0.05em] mt-6 text-gray-700">
+            <p className="font-zilla text-base md:text-xl mt-4 text-gray-700">
               {item.description}
             </p>
           </div>
 
           {/* Image Section */}
-          <div className="w-1/2 h-auto  px-4">
+          <div className="w-full md:w-1/2 h-auto px-4">
             <img
               src={img}
               alt={item.title}

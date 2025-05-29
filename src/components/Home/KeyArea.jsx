@@ -41,26 +41,27 @@ const KeyArea = () => {
         </div>
 
         {/* Cards */}
-        <div className="flex gap-6 overflow-x-auto sm:flex-wrap sm:overflow-visible pb-4 px-2 sm:px-0">
-          {perspectives.map((perspective) => (
-            <div
-              key={perspective.id}
-              className="min-w-[280px] sm:min-w-[300px] sm:flex-1 bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col items-start gap-4"
-            >
-              <div className="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center">
-                <MapPin className="w-4 h-4 text-purple-600" />
-              </div>
+     {/* Cards */}
+<div className="flex flex-col gap-6 sm:flex sm:flex-col md:grid md:grid-cols-4 md:gap-6 px-2">
+  {perspectives.map((perspective) => (
+    <div
+      key={perspective.id}
+      className="bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col items-start gap-4"
+    >
+      <div className="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center">
+        <MapPin className="w-4 h-4 text-purple-600" />
+      </div>
+      <h3 className="text-xl font-semibold">{perspective.title}</h3>
+      <p className="text-sm text-left text-gray-700">{perspective.description}</p>
+      <button className="flex items-center text-[#4F46E5] font-medium hover:text-[#3730a3] transition">
+        Learn More
+        <ArrowRight className="w-4 h-4 ml-2" />
+      </button>
+    </div>
+  ))}
+</div>
 
-              <h3 className="text-xl font-semibold">{perspective.title}</h3>
-              <p className="text-sm text-left text-gray-700">{perspective.description}</p>
 
-              <button className="flex items-center text-[#4F46E5] font-medium hover:text-[#3730a3] transition">
-                Learn More
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </button>
-            </div>
-          ))}
-        </div>
 
         {/* Call to Action */}
         <div className="flex justify-center">

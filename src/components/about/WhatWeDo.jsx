@@ -27,28 +27,27 @@ const contentList = [
 const WhatWeDo = () => {
   return (
     <div className="bg-white max-w-7xl mx-auto text-black flex flex-col gap-16 py-10 px-4">
-
-        <h1 className="font-bold text-[32px]">What We Do</h1>
+      <h1 className="font-bold text-3xl">What We Do</h1>
 
       {contentList.map((item, index) => (
         <div
           key={index}
-          className={`flex flex-col-reverse md:flex-row ${
-            index % 2 === 0 ? "md:flex-row-reverse" : ""
-          } justify-between items-center max-w-[1296px] w-full mx-auto gap-8`}
+          className={`flex flex-col ${
+            index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
+          } justify-between items-center gap-8`}
         >
           {/* Text Section */}
-          <div className="md:w-1/2 px-4">
-            <h1 className="font-outfit font-medium text-[20px] leading-[32px] tracking-normal">
+          <div className="w-full md:w-1/2 px-2">
+            <h1 className="font-outfit font-medium text-2xl leading-3xl tracking-normal">
               {item.title}
             </h1>
-            <p className="font-zilla text-[12px] leading-[22px] tracking-[0.05em] mt-6 text-gray-700">
+            <p className="font-zilla text-xl leading-2xl tracking-[0.05em] mt-6 text-gray-700">
               {item.description}
             </p>
           </div>
 
           {/* Image Section */}
-          <div className="md:w-1/2 px-4">
+          <div className="w-full md:w-1/2 px-2">
             <img
               src={img}
               alt={item.title}

@@ -4,21 +4,22 @@ import img from "../../assets/image_Corporate1.png";
 const CorporateHero = () => {
   return (
     <div className="bg-white text-black flex justify-center p-4">
-      <div className="flex  justify-between items-center max-w-7xl  w-full mt-[40px]  gap-10">
+      <div className="flex flex-col-reverse  md:flex-row justify-between items-center max-w-7xl w-full mt-10 gap-10">
         
         {/* Text Section */}
-        <div className="flex flex-col justify-between w-full h-auto px-[10px]">
+        <div className="flex flex-coljustify-between w-full md:w-1/2 h-auto px-3">
           <div>
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight">Corporate Sustainability</h1>
-            <p className=" mt-6 overflow-hidden text-ellipsis">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+              Corporate Sustainability
+            </h1>
+            <p className="mt-6 overflow-hidden text-ellipsis">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
             </p>
           </div>
-         
         </div>
 
         {/* Image Section */}
-        <div className="w-full ">
+        <div className="w-full md:w-1/2 px-8">
           <img
             src={img}
             alt="Hero"

@@ -18,15 +18,15 @@ const BeforeFooterCard = () => {
   ];
 
   return (
-    <section className="flex justify-center items-center bg-white py-16 px-8 text-black">
-      <div className="w-full max-w-7xl flex flex-row gap-12">
+    <section className="flex justify-center items-center bg-white py-16 px-4 text-black">
+      <div className="w-full max-w-7xl flex flex-col md:flex-row gap-6 p-4">
         {perspectives.map((perspective) => (
           <div
             key={perspective.id}
-            className="bg-white border border-gray-300 rounded-[16px] p-6 shadow-sm flex items-start gap-6 min-w-[300px] max-w-[100%] w-full"
+            className="bg-white border border-gray-300 rounded-[16px] p-6 shadow-sm flex items-start gap-6 w-full"
           >
-            <div className="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center">
-              <MapPin className="w-5 h-5 text-purple-600" />
+            <div className="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center">
+              <MapPin className="w-4 h-4 text-purple-600" />
             </div>
 
             <div className="flex flex-col gap-2">

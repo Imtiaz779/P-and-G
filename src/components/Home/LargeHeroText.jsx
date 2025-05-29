@@ -3,29 +3,31 @@ import img from "../../assets/image.png";
 
 const LargeHeroText = () => {
   return (
-    <div className="bg-white text-black flex justify-center p-4">
-      <div className="flex  justify-between items-center max-w-7xl  w-full mt-[40px]  gap-10">
+    <div className="bg-white text-black flex justify-center px-4 py-10">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center max-w-7xl w-full gap-10">
         
         {/* Text Section */}
-        <div className="flex flex-col justify-between w-full h-auto px-[10px]">
-          <div>
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight">A large hero text here</h1>
-            <p className=" mt-6 overflow-hidden text-ellipsis">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <button className="bg-[#25184F] text-white px-6 py-2 rounded-md mt-8 w-fit ">Read more</button>
+        <div className="w-full md:w-1/2 px-3">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            A large hero text here
+          </h1>
+          <p className="mt-6 text-base md:text-lg text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button className="bg-[#25184F] text-white px-6 py-2 rounded-md mt-6 w-fit">
+            Read more
+          </button>
         </div>
 
         {/* Image Section */}
-        <div className="w-full ">
+        <div className="w-full h-auto md:w-1/2 px-5">
           <img
             src={img}
             alt="Hero"
-            className="w-full h-full rounded-[24px] object-cover"
+            className="w-full h-auto rounded-[24px] object-cover"
           />
         </div>
       </div>
