@@ -17,7 +17,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
+        <nav className="hidden md:flex gap-6 text-gray-700 font-medium" data-aos="fade-right"  data>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/insights">Insights</Link>
@@ -35,7 +35,7 @@ const Header = () => {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center px-4 gap-4 pb-6 text-gray-700 font-medium bg-white w-full absolute z-10">
+        <div className="md:hidden flex flex-col items-center px-4 gap-4 pb-6 text-gray-700 font-medium bg-white w-full absolute z-10" data-aos="flip-down"  >
           <Link to="/" onClick={toggleMenu}>Home</Link>
           <Link to="/about" onClick={toggleMenu}>About</Link>
           <Link to="/insights" onClick={toggleMenu}>Insights</Link>
