@@ -10,10 +10,10 @@ const AboutPandG = () => {
         
         {/* Text Section with motion */}
         <motion.div
-          variants={fadeIn("right", 0.2)}
+          variants={fadeIn("right", 0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.6 }}
           className="w-full md:w-1/2 px-2"
         >
           <h1 className="text-3xl md:text-4xl font-bold leading-tight whitespace-nowrap">

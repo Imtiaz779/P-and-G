@@ -25,10 +25,10 @@ const BeforeFooterCard = () => {
         {perspectives.map((perspective, index) => (
           <motion.div
             key={perspective.id}
-            variants={fadeIn("up", index * 0.2)}
+            variants={fadeIn("up", index * 0.1)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.6 }}
             className="bg-white border border-gray-300 rounded-[16px] p-6 shadow-sm flex items-start gap-6 w-full"
           >
             <div className="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center">

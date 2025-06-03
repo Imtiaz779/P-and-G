@@ -11,10 +11,10 @@ const LargeHeroText = () => {
         {/* Text Section */}
         <motion.div
           className="w-full md:w-1/2 px-3"
-          variants={fadeIn("right", 0.2)}
+          variants={fadeIn("right", 0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: false, amount: 0.7 }}
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             A large hero text here

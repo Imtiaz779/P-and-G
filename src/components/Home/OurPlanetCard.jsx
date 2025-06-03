@@ -31,7 +31,7 @@ const OurPlanetCard = () => {
         {/* Header */}
         <motion.div
           className="px-2 md:px-4 text-left md:text-center"
-          variants={fadeIn("up", 0.1)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.4 }}
