@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 
 const WhoWeServe = () => {
   return (
@@ -52,13 +54,17 @@ const WhoWeServe = () => {
                 "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
             },
           ].map((item) => (
-            <div
+            <motion.div
+            variants={fadeIn("up", 0.2)}
+                                      initial="hidden"
+                                      whileInView="show"
+                                      viewport={{ once: false, amount: 0.3 }}
               key={item.id}
-              className="bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col items-start gap-4" data-aos="fade-right"
+              className="bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col items-start gap-4" 
             >
               <h3 className="text-xl font-semibold text-[#25184F]">{item.title}</h3>
               <p className="text-sm text-left text-gray-700">{item.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

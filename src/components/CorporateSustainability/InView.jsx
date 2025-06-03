@@ -1,6 +1,8 @@
 import React from "react";
 import img from "../../assets/image_Corporate3.png";
 import img1 from "../../assets/image_Corporate2.png";
+import { motion } from 'framer-motion';
+import { fadeIn } from "../../variants";
 
 const contentList = [
   {
@@ -27,20 +29,30 @@ const InView = () => {
           key={index}
           className={`flex flex-col md:flex-row ${
             index % 2 === 0 ? "md:flex-row-reverse" : ""
-          } justify-between items-center w-full mx-auto gap-8`} data-aos="zoom-in"
+          } justify-between items-center w-full mx-auto gap-8`}
         >
           {/* Text Section */}
-          <div className="w-full md:w-1/2 px-4 flex flex-col">
+          <motion.div
+           variants={fadeIn("right", 0.2)}
+                    initial={{...fadeIn("right",0.2).hidden,opacity:1,scale:0.3}}
+                    whileInView="show"
+                    viewport={{ once: false, amount: 0.5 }}
+          className="w-full md:w-1/2 px-4 flex flex-col">
             <h2 className="font-outfit font-medium text-2xl leading-[1.2] tracking-normal">
               {item.title}
             </h2>
             <p className="font-zilla text-xl md:text-2xl leading-[1.5] tracking-[0.05em] mt-4 text-gray-700">
               {item.description}
             </p>
-          </div>
+          </motion.div>
 
           {/* Image Section */}
-          <div className="w-full md:w-1/2 px-4 flex flex-col">
+          <motion.div
+           variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false, amount: 0.5 }}
+          className="w-full md:w-1/2 px-4 flex flex-col">
             <div className="w-full aspect-[4/3] overflow-hidden rounded-[24px] shadow-md">
               <img
                 src={item.img}
@@ -48,7 +60,7 @@ const InView = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       ))}
     </div>

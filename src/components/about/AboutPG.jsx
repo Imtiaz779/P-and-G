@@ -1,5 +1,7 @@
 import React from 'react';
 import img from "../../assets/About image01.png";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 
 const AboutPG = () => {
   return (
@@ -7,7 +9,12 @@ const AboutPG = () => {
       <div className="flex flex-col-reverse  md:flex-row justify-between items-center max-w-7xl w-full mt-10 gap-10">
         
         {/* Text Section */}
-        <div className="w-full h-auto px-3" data-aos="zoom-in-left">
+        <motion.div
+         variants={fadeIn("right", 0.2)}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: false, amount: 0.5 }}
+        className="w-full h-auto px-3" >
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight">About P & G</h1>
           <p className="mt-6 text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -15,16 +22,21 @@ const AboutPG = () => {
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </div>
+        </motion.div>
 
         {/* Image Section */}
-        <div className="w-full p-8" data-aos="zoom-out-right">
+        <motion.div
+         variants={fadeIn("right", 0.2)}
+                                      initial="hidden"
+                                      whileInView="show"
+                                      viewport={{ once: false, amount: 0.5 }}
+        className="w-full p-8" >
           <img
             src={img}
             alt="Hero"
             className="w-full h-full rounded-[24px] object-cover"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

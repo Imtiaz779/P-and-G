@@ -1,13 +1,21 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants'; // adjust path if needed
 import img from "../../assets/image.png";
 
 const LargeHeroText = () => {
   return (
     <div className="bg-white text-black flex justify-center px-4 py-10">
       <div className="flex flex-col-reverse md:flex-row justify-between items-center max-w-7xl w-full gap-10">
-        
+
         {/* Text Section */}
-        <div className="w-full md:w-1/2 px-3" data-aos="fade-right">
+        <motion.div
+          className="w-full md:w-1/2 px-3"
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.4 }}
+        >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             A large hero text here
           </h1>
@@ -17,19 +25,30 @@ const LargeHeroText = () => {
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <button className="bg-[#25184F] text-white px-6 py-2 rounded-md mt-6 w-fit">
+          <motion.button
+            variants={fadeIn().hover}
+            whileHover="hover"
+            className="bg-[#25184F] text-white px-6 py-2 rounded-md mt-6 w-fit"
+          >
             Read more
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
         {/* Image Section */}
-        <div className="w-full h-auto md:w-1/2 px-5" data-aos="zoom-in">
+        <motion.div
+          className="w-full h-auto md:w-1/2 px-5"
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.4 }}
+        >
           <img
             src={img}
             alt="Hero"
             className="w-full h-auto rounded-[24px] object-cover"
           />
-        </div>
+        </motion.div>
+
       </div>
     </div>
   );

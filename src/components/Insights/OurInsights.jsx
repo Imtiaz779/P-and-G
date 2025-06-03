@@ -1,5 +1,7 @@
 import React from 'react';
 import img from "../../assets/insightshero.png";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 
 const OurInsights = () => {
   return (
@@ -7,16 +9,26 @@ const OurInsights = () => {
       <div className="flex flex-col md:flex-row-reverse justify-between items-center max-w-7xl w-full mt-10 gap-10">
         
         {/* Image Section */}
-        <div className="w-full  md:w-1/2 px-4" data-aos="fade-left">
+        <motion.div 
+         variants={fadeIn("right", 0.2)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: false, amount: 0.5 }}
+        className="w-full  md:w-1/2 px-4" >
           <img
             src={img}
             alt="Our Insights"
             className="w-full h-full rounded-[24px] object-cover"
           />
-        </div>
+        </motion.div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2 px-3" data-aos="fade-right">
+        <motion.div
+         variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false, amount: 0.5 }}
+        className="w-full md:w-1/2 px-3" >
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">Our Insights</h1>
           <p className="mt-6 text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -24,7 +36,7 @@ const OurInsights = () => {
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </div>
+        </motion.div>
         
       </div>
     </div>

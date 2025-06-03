@@ -10,6 +10,8 @@ import Career from "./pages/Career/Career";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
+
 const App = () => {
   
   useEffect(() => {

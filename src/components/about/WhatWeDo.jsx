@@ -1,5 +1,7 @@
 import React from "react";
 import img from "../../assets/AboutPlaceholderimage .png";
+import { motion } from 'framer-motion';
+import { fadeIn } from "../../variants";
 
 const contentList = [
   {
@@ -34,26 +36,36 @@ const WhatWeDo = () => {
           key={index}
           className={`flex flex-col ${
             index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-          } justify-between items-center gap-8`} data-aos="zoom-in-up"
+          } justify-between items-center gap-8`} 
         >
           {/* Text Section */}
-          <div className="w-full md:w-1/2 px-2">
+          <motion.div
+           variants={fadeIn("right", 0.2)}
+                                      initial="hidden"
+                                      whileInView="show"
+                                      viewport={{ once: false, amount: 0.5 }}
+          className="w-full md:w-1/2 px-2">
             <h1 className="font-outfit font-medium text-2xl leading-3xl tracking-normal">
               {item.title}
             </h1>
             <p className="font-zilla text-xl leading-2xl tracking-[0.05em] mt-6 text-gray-700">
               {item.description}
             </p>
-          </div>
+          </motion.div>
 
           {/* Image Section */}
-          <div className="w-full md:w-1/2 px-2">
+          <motion.div 
+            variants={fadeIn("right", 0.2)}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        viewport={{ once: false, amount: 0.5 }}
+          className="w-full md:w-1/2 px-2">
             <img
               src={img}
               alt={item.title}
               className="w-full h-full rounded-[24px] object-cover shadow-md"
             />
-          </div>
+          </motion.div>
         </div>
       ))}
     </div>

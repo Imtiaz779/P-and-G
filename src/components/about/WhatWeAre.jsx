@@ -1,5 +1,7 @@
 import React from 'react';
 import { MapPin } from "lucide-react";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 
 const WhatWeAre = () => {
   const perspectives = [
@@ -31,7 +33,7 @@ const WhatWeAre = () => {
 
   return (
     <section className="flex justify-center items-center bg-[#25184F] py-16 px-4 text-black">
-      <div className="w-full max-w-7xl flex flex-col gap-10" data-aos="fade-left">
+      <div className="w-full max-w-7xl flex flex-col gap-10">
         
         {/* Heading */}
         <div className="px-2">
@@ -39,9 +41,15 @@ const WhatWeAre = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-2">
+        <motion.div
+          
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-2">
           {perspectives.map((perspective) => (
-            <div
+            <motion.div
+            variants={fadeIn("right", 0.2)}
+                                      initial="hidden"
+                                      whileInView="show"
+                                      viewport={{ once: false, amount: 0.5 }}
               key={perspective.id}
               className="bg-white rounded-[16px] p-6 shadow-md flex flex-col items-start gap-4"
             >
@@ -51,9 +59,9 @@ const WhatWeAre = () => {
 
               <h3 className="text-xl font-semibold">{perspective.title}</h3>
               <p className="text-sm text-left text-gray-700">{perspective.description}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
       </div>
     </section>

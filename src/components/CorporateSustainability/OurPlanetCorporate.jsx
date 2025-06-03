@@ -3,6 +3,8 @@ import img1 from "../../assets/image_Corporate5.png";
 import img2 from "../../assets/image_Corporate6.png";
 import img3 from "../../assets/image_Corporate7.png";
 import img4 from "../../assets/image_Corporate8.png";
+import { motion } from 'framer-motion';
+import { fadeIn } from "../../variants";
 
 const contentList = [
   {
@@ -38,9 +40,14 @@ const OurPlanetCorporate = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8" >
         {contentList.map((item, index) => (
-          <div key={index} className=""data-aos="zoom-in">
+          <div key={index} className="">
             {/* Image Section */}
-            <div className="w-full px-8">
+            <motion.div 
+             variants={fadeIn("right", 0.2)}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: false, amount: 0.5 }}
+            className="w-full px-8">
               <div className="w-full aspect-[4/3] overflow-hidden rounded-[24px] shadow-md " >
                 <img
                   src={item.img}
@@ -48,17 +55,22 @@ const OurPlanetCorporate = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-            </div>
+            </motion.div>
 
             {/* Text Section */}
-            <div className="w-full p-4">
+            <motion.div
+             variants={fadeIn("right", 0.2)}
+                      initial={{...fadeIn("right",0.2).hidden,opacity:1,scale:0.5}}
+                      whileInView="show"
+                      viewport={{ once: false, amount: 0.5 }}
+            className="w-full p-4">
               <h2 className="font-outfit font-medium text-[20px] leading-[32px] tracking-normal">
                 {item.title}
               </h2>
               <p className="font-zilla text-[14px] md:text-[16px] leading-[22px] tracking-[0.05em] mt-4 text-gray-700">
                 {item.description}
               </p>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

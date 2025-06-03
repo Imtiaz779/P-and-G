@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants'; // Adjust this path if needed
 import img1 from "../../assets/card01.png";
 import img2 from "../../assets/card02.png";
 import img3 from "../../assets/card03.png";
@@ -24,19 +26,29 @@ const OurPlanetCard = () => {
 
   return (
     <section className="flex justify-center items-center bg-white py-16 px-4 text-black">
-      <div className="w-full max-w-7xl flex flex-col gap-10">
+      <div className="w-full max-w-7xl flex flex-col gap-10 overflow-hidden">
         
         {/* Header */}
-        <div className="px-2 md:px-4 text-left md:text-center">
+        <motion.div
+          className="px-2 md:px-4 text-left md:text-center"
+          variants={fadeIn("up", 0.1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.4 }}
+        >
           <h2 className="text-3xl sm:text-4xl font-bold">Investing In Our Planet</h2>
-        </div>
+        </motion.div>
 
         {/* Cards */}
         <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6 justify-center items-center sm:items-stretch">
           {cards.map((card, index) => (
-            <div
+            <motion.div
               key={index}
-              className="w-full md:w-[320px] bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col justify-between" data-aos="zoom-in"
+              className="w-full md:w-[320px] bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col justify-between"
+              variants={fadeIn("up", index * 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.3 }}
             >
               <img
                 src={card.img}
@@ -48,7 +60,7 @@ const OurPlanetCard = () => {
               <button className="bg-white text-[#4F46E5] font-medium px-6 py-2 rounded-md hover:bg-[#f2f2f2] transition mt-4">
                 Learn More
               </button>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
