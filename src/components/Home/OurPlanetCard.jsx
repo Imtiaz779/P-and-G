@@ -40,11 +40,11 @@ const OurPlanetCard = () => {
         </motion.div>
 
         {/* Cards */}
-        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6 justify-center items-center sm:items-stretch">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6 md:gap-16 justify-center items-center sm:items-stretch ">
           {cards.map((card, index) => (
             <motion.div
               key={index}
-              className="w-full md:w-[320px] bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col justify-between"
+              className="w-full md:w-[320px] bg-[#EEE9FF] rounded-[16px] p-8 shadow-md flex flex-col justify-between gap-4"
               variants={fadeIn("up", index * 0.2)}
               initial="hidden"
               whileInView="show"

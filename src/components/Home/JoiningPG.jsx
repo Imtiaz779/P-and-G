@@ -36,7 +36,7 @@ const JoiningPG = () => {
           variants={fadeIn("left", 0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.3 }}
           className="w-full md:w-1/2"
         >
           <img

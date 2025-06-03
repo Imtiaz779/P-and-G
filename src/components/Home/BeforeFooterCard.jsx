@@ -28,7 +28,7 @@ const BeforeFooterCard = () => {
             variants={fadeIn("up", index * 0.1)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.6 }}
+            viewport={{ once: false, amount: 0.3 }}
             className="bg-white border border-gray-300 rounded-[16px] p-6 shadow-sm flex items-start gap-6 w-full"
           >
             <div className="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center">

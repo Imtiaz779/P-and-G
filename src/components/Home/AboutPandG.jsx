@@ -13,7 +13,7 @@ const AboutPandG = () => {
           variants={fadeIn("right", 0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.3 }}
           className="w-full md:w-1/2 px-2"
         >
           <h1 className="text-3xl md:text-4xl font-bold leading-tight whitespace-nowrap">
@@ -37,7 +37,7 @@ const AboutPandG = () => {
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.3 }}
           className="w-full md:w-1/2 px-2"
         >
           <img

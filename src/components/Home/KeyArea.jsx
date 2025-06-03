@@ -41,7 +41,7 @@ const KeyArea = () => {
           variants={fadeIn("up", 0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
             Discover Our Perspective In Key Areas
@@ -77,10 +77,10 @@ const KeyArea = () => {
         {/* CTA Button */}
         <motion.div
           className="flex justify-center"
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <motion.button
             whileHover="hover"

@@ -14,7 +14,7 @@ const LargeHeroText = () => {
           variants={fadeIn("right", 0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             A large hero text here
@@ -37,10 +37,10 @@ const LargeHeroText = () => {
         {/* Image Section */}
         <motion.div
           className="w-full h-auto md:w-1/2 px-5"
-          variants={fadeIn("left", 0.4)}
+          variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <img
             src={img}
