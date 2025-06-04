@@ -46,7 +46,7 @@ const OurPlanetCorporate = () => {
              variants={fadeIn("right", 0.2)}
                                 initial="hidden"
                                 whileInView="show"
-                                viewport={{ once: false, amount: 0.5 }}
+                                viewport={{ once: false, amount: 0.1 }}
             className="w-full px-8">
               <div className="w-full aspect-[4/3] overflow-hidden rounded-[24px] shadow-md " >
                 <img
@@ -62,7 +62,7 @@ const OurPlanetCorporate = () => {
              variants={fadeIn("right", 0.2)}
                       initial={{...fadeIn("right",0.2).hidden,opacity:1,scale:0.5}}
                       whileInView="show"
-                      viewport={{ once: false, amount: 0.5 }}
+                      viewport={{ once: false, amount: 0.1 }}
             className="w-full p-4">
               <h2 className="font-outfit font-medium text-[20px] leading-[32px] tracking-normal">
                 {item.title}

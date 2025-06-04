@@ -39,7 +39,7 @@ const Career = () => {
         variants={fadeIn("left",0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{once:false,amount:0.5}}
+        viewport={{once:false,amount:0.1}}
         whileHover={"hover"}
          transition={{ type: "spring", stiffness: 300 }}
         className="bg-[#25184F] text-white px-6 py-2 rounded-lg mt-8 shadow-md hover:shadow-xl 

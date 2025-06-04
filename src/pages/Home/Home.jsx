@@ -8,14 +8,14 @@ import BeforeFooterCard from '../../components/Home/BeforeFooterCard'
 
 const Home = () => {
   return (
-   <>
+   <div className='p-20'>
     <LargeHeroText/>
     <OurPlanetCard/>
     <AboutPandG/>
     <KeyArea/>
     <JoiningPG/>
     <BeforeFooterCard/>
-    </>
+    </div>
   )
 }
 

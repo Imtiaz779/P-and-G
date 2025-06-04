@@ -49,7 +49,7 @@ const WhatWeAre = () => {
             variants={fadeIn("right", 0.2)}
                                       initial="hidden"
                                       whileInView="show"
-                                      viewport={{ once: false, amount: 0.5 }}
+                                      viewport={{ once: false, amount: 0.1 }}
               key={perspective.id}
               className="bg-white rounded-[16px] p-6 shadow-md flex flex-col items-start gap-4"
             >

@@ -43,7 +43,7 @@ const WhatWeDo = () => {
            variants={fadeIn("right", 0.2)}
                                       initial="hidden"
                                       whileInView="show"
-                                      viewport={{ once: false, amount: 0.5 }}
+                                      viewport={{ once: false, amount: 0.1 }}
           className="w-full md:w-1/2 px-2">
             <h1 className="font-outfit font-medium text-2xl leading-3xl tracking-normal">
               {item.title}
@@ -58,7 +58,7 @@ const WhatWeDo = () => {
             variants={fadeIn("right", 0.2)}
                                         initial="hidden"
                                         whileInView="show"
-                                        viewport={{ once: false, amount: 0.5 }}
+                                        viewport={{ once: false, amount: 0.1 }}
           className="w-full md:w-1/2 px-2">
             <img
               src={img}

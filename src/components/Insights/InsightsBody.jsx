@@ -43,7 +43,7 @@ const InsightsBody = () => {
            variants={fadeIn("right", 0.2)}
                             initial="hidden"
                             whileInView="show"
-                            viewport={{ once: false, amount: 0.5 }}
+                            viewport={{ once: false, amount: 0.1 }}
           className="w-full md:w-1/2 px-4">
             <h2 className="font-outfit font-medium text-2xl md:text-3xl">
               {item.title}
@@ -58,7 +58,7 @@ const InsightsBody = () => {
             variants={fadeIn("right", 0.2)}
                               initial="hidden"
                               whileInView="show"
-                              viewport={{ once: false, amount: 0.5 }}
+                              viewport={{ once: false, amount: 0.1 }}
           className="w-full md:w-1/2 h-auto px-4">
             <img
               src={img}

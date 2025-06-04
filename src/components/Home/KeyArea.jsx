@@ -41,7 +41,7 @@ const KeyArea = () => {
           variants={fadeIn("up", 0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
             Discover Our Perspective In Key Areas
@@ -57,7 +57,7 @@ const KeyArea = () => {
               variants={fadeIn("up", index * 0.2)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.1 }}
             >
               <div className="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center">
                 <MapPin className="w-4 h-4 text-purple-600" />
@@ -80,7 +80,7 @@ const KeyArea = () => {
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           <motion.button
             whileHover="hover"

@@ -57,7 +57,7 @@ const Header = () => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="md:hidden flex flex-col items-center px-4 gap-4 pb-6 text-gray-700 font-medium bg-white w-full shadow-md"
+            className="md:hidden flex flex-col items-center px-4 gap-4 pb-4 text-gray-700 font-medium bg-white w-full shadow-md"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}

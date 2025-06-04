@@ -13,7 +13,7 @@ const CorporateHero = () => {
           variants={fadeIn("right", 0.2)}
           initial={{...fadeIn("right",0.2).hidden,opacity:1,scale:0.5}}
           whileInView="show"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.1 }}
           className="flex flex-col justify-between w-full md:w-1/2 h-auto px-3"
         >
           <div>
@@ -31,7 +31,7 @@ const CorporateHero = () => {
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.1 }}
           className="w-full md:w-1/2 px-3"
         >
           <img

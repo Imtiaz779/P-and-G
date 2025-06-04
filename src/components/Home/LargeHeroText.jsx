@@ -14,7 +14,7 @@ const LargeHeroText = () => {
           variants={fadeIn("right", 0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             A large hero text here
@@ -40,7 +40,7 @@ const LargeHeroText = () => {
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           <img
             src={img}

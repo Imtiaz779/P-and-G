@@ -5,11 +5,11 @@ import OurPlanetCorporate from '../../components/CorporateSustainability/OurPlan
 
 const CorporateSustainability = () => {
   return (
-    <>
+    <div className='p-20'>
     <CorporateHero/>
     <InView/>
     <OurPlanetCorporate/>
-    </>
+    </div>
   )
 }
 

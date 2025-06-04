@@ -34,7 +34,7 @@ const OurPlanetCard = () => {
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold">Investing In Our Planet</h2>
         </motion.div>
@@ -48,7 +48,7 @@ const OurPlanetCard = () => {
               variants={fadeIn("up", index * 0.2)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.1 }}
             >
               <img
                 src={card.img}

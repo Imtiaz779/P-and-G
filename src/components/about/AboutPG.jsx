@@ -13,7 +13,7 @@ const AboutPG = () => {
          variants={fadeIn("right", 0.2)}
                                     initial="hidden"
                                     whileInView="show"
-                                    viewport={{ once: false, amount: 0.5 }}
+                                    viewport={{ once: false, amount: 0.1 }}
         className="w-full h-auto px-3" >
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight">About P & G</h1>
           <p className="mt-6 text-gray-700">
@@ -29,7 +29,7 @@ const AboutPG = () => {
          variants={fadeIn("right", 0.2)}
                                       initial="hidden"
                                       whileInView="show"
-                                      viewport={{ once: false, amount: 0.5 }}
+                                      viewport={{ once: false, amount: 0.1 }}
         className="w-full p-8" >
           <img
             src={img}

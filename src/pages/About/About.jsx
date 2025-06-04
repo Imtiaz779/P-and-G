@@ -6,12 +6,12 @@ import WhoWeServe from '../../components/about/WhoWeServe'
 
 const About = () => {
   return (
-    <>
+    <div className='p-20'>
     <AboutPG/>
     <WhatWeDo/>
     <WhatWeAre/>
     <WhoWeServe/>
-    </>
+    </div>
   )
 }
 

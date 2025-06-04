@@ -4,10 +4,10 @@ import InsightsBody from '../../components/Insights/InsightsBody'
 
 const Insights = () => {
   return (
-   <>
+   <div className='p-20'>
    <OurInsights/>
    <InsightsBody/>
-   </>
+   </div>
   )
 }
 

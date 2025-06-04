@@ -36,7 +36,7 @@ const InView = () => {
            variants={fadeIn("right", 0.2)}
                     initial={{...fadeIn("right",0.2).hidden,opacity:1,scale:0.3}}
                     whileInView="show"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: false, amount: 0.1 }}
           className="w-full md:w-1/2 px-4 flex flex-col">
             <h2 className="font-outfit font-medium text-2xl leading-[1.2] tracking-normal">
               {item.title}
@@ -51,7 +51,7 @@ const InView = () => {
            variants={fadeIn("right", 0.2)}
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: false, amount: 0.1 }}
           className="w-full md:w-1/2 px-4 flex flex-col">
             <div className="w-full aspect-[4/3] overflow-hidden rounded-[24px] shadow-md">
               <img

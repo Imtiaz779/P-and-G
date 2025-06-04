@@ -13,7 +13,7 @@ const OurInsights = () => {
          variants={fadeIn("right", 0.2)}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.1 }}
         className="w-full  md:w-1/2 px-4" >
           <img
             src={img}
@@ -27,7 +27,7 @@ const OurInsights = () => {
          variants={fadeIn("right", 0.2)}
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: false, amount: 0.1 }}
         className="w-full md:w-1/2 px-3" >
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">Our Insights</h1>
           <p className="mt-6 text-gray-700">

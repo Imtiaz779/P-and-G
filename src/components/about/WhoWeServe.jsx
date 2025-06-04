@@ -58,7 +58,7 @@ const WhoWeServe = () => {
             variants={fadeIn("up", 0.2)}
                                       initial="hidden"
                                       whileInView="show"
-                                      viewport={{ once: false, amount: 0.3 }}
+                                      viewport={{ once: false, amount: 0.1 }}
               key={item.id}
               className="bg-[#EEE9FF] rounded-[16px] p-6 shadow-md flex flex-col items-start gap-4" 
             >
